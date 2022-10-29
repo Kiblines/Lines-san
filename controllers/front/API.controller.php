@@ -38,6 +38,20 @@ class Apicontroller
                 "editeur" => $line["nom"],
                 "auteur" => $line["nom_auteur"]
             ];
+//             livre_id	1
+// livre_isbn	154545548
+// livre_titre	"Dragon ball tome 1"
+// livre_img	"dbz.img"
+// livre_prix	7
+// livre_page	156
+// livre_langue	"FR"
+// livre_genre	"manga"
+// editeur_id	1
+// editeur_libelle	"Kana"
+// editeur_pays	"Japon"
+// auteur_id	3
+// auteur_nom	"Akira Toriyama\r\n\r\n"
+// auteur_nationalite	"Japonais"
         }
         return $data;
     }
