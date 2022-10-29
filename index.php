@@ -17,33 +17,32 @@ try {
         switch ($url[0]) {
             case "front":
                 switch ($url[1]) {
-                    case "livre":
+                    case "livres":
                         $apiController->getLivres();
                         break;
-
-
-                    case "genre":
-                        $apiController->getGenre($url[2]);
-                        break;
+                        case "livre":
+                            if(empty($url[2])) throw new Exception ("L'identifiant du livre est manquant");
+                            $apiController -> getLivre($url[2]);
+                            break;
 
                     case "auteur":
-                        $apiController->getAuteur($url[2]);
-                        break;
-                    case "editeur":
-                        $apiController->getEditeur($url[2]);
-                        break;
-                    default:
-                        throw new Exception("La page n'existe pas");
+                                    $apiController->getAuteur();
+                                    break;
+                                case "editeur":
+                                    $apiController->getEditeur();
+                                    break;
+                                default:
+                                    throw new Exception("La page n'existe pas");
+                            }
+                            break;
+                        case "back":
+                            echo "page back end demandée";
+                            break;
+                        default:
+                            throw new Exception("La page n'existe pas");
+                    }
                 }
-                break;
-            case "back":
-                echo "page back end demandée";
-                break;
-            default:
-                throw new Exception("La page n'existe pas");
-        }
-    }
-} catch (Exception $e) {
-    $msg = $e->getMessage();
-    echo $msg;
-}
+            } catch (Exception $e) {
+                $msg = $e->getMessage();
+                echo $msg;
+            }

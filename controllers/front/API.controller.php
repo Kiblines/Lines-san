@@ -1,5 +1,6 @@
 <?php
 require_once 'models/front/API.manager.php';
+require_once 'models\Model.php';
 
 
 class Apicontroller
@@ -16,29 +17,43 @@ class Apicontroller
     public function getLivres()
     {
         $livres = $this->apiManager->getLivres();
-        echo "<pre>";
-        print_r($livres);
-        echo "</pre>";
+        Model::sendJson($this->dataLivres($livres));
     }
 
-    public function getlivre($id)
+    public function getLivre($idLivre)
+    {
+     
+        $dataLivre = $this->apiManager->getDBLivre($idLivre);
+        Model::sendJson($dataLivre);
+        
+    }
+    private function dataLivres($lines){
+        $data = [];
+        foreach($lines as $line){
+            $data[] = [
+                "id" => $line["livre_id"],
+                "titre" => $line["titre"],
+                "date" => $line["date_parution"],
+                "resume" => $line["resume"],
+                "editeur" => $line["nom"],
+                "auteur" => $line["nom_auteur"]
+            ];
+        }
+        return $data;
+    }
+
+    public function getAuteur()
     {
 
-        echo "envoie des informations sur le livre " . $id . " demandées";
+        $dataAuteur = $this->apiManager->getAuteur();
+        Model::sendJSON($dataAuteur);
     }
-    public function getAuteur($id)
+    public function getEditeur()
     {
 
-        echo "envoie des informations sur l'auteur " . $id . " demandées";
+        $dataEditeur = $this->apiManager->getEditeur();
+        Model::sendJSON($dataEditeur);
+        
     }
-    public function getEditeur($id)
-    {
-
-        echo "envoie des informations sur l'éditeur " . $id . " demandées";
-    }
-    public function getGenre($id)
-    {
-
-        echo "envoie des informations sur le genre " . $id . " demandées";
-    }
+   
 }
