@@ -5,7 +5,9 @@ define("URL", str_replace("index.php", "", (isset($_SERVER['HTTPS']) ? "https" :
 
 // require sur api.controller.php
 require_once("controllers/front/API.controller.php");
+require_once("controllers/back/admin.controller.php");
 $apiController = new Apicontroller();
+$adminController = new AdminController();
 
 
 try {
@@ -36,8 +38,16 @@ try {
                             }
                             break;
                         case "back":
-                            echo "page back end demandée";
-                            break;
+                            switch ($url[1]) {
+                                case "login":
+                                    $adminController->getPageLogin();
+                                    break;
+                                default:
+                                    throw new Exception("La page n'existe pas");
+                                    
+                            }
+                           
+                            
                         default:
                             throw new Exception("La page n'existe pas");
                     }
