@@ -1,13 +1,17 @@
-import "./App.css";
-
+import react from "react";
+import styled from "styled-components";
 import logo from "./logo.jpg";
-import lines from "./lines-san.PNG";
+import lines from "./lines-san.png";
+import Navbar from "./components/Navbar";
+import Site from "./container/Site";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <img style={{ width: 500, height: 600 }} src={logo} alt="logo" />
-      <img style={{ width: 500, height: 600 }} src={lines} alt="logo" />
+      <BrowserRouter>
+        <Site></Site>
+      </BrowserRouter>
     </div>
   );
 }
