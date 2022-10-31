@@ -8,5 +8,5 @@ const StyledBanderole = styled.div`
 `;
 
 export default function Banderole() {
-  return <StyledBanderole></StyledBanderole>;
+  return <StyledBanderole>Je suis un gros noob</StyledBanderole>;
 }
