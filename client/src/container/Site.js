@@ -17,7 +17,7 @@ export default function site() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<h1>Page de Contact</h1>} />
+          <Route path="/contact" element={<h1>contact route</h1>} />
           <Route
             path="*"
             element={<Error type="404">La page n'existe pas</Error>}

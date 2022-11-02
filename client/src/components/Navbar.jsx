@@ -2,15 +2,15 @@ import React from "react";
 import styled from "styled-components";
 import Logo from "../lines-san.png";
 import { NavLink } from "react-router-dom";
+import background from "../background-header.jpg";
 
 const StyledRow = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   justify-content: flex-start;
-
   overflow: hidden;
-  background-color: red;
+  background-image: url(${background});
 `;
 
 const StyledUl = styled.ul`
@@ -34,7 +34,7 @@ const StyledLink = styled.a`
 
 export default function Navbar() {
   return (
-    <StyledRow>
+    <StyledRow src={background}>
       <img style={{ width: 100, height: 100 }} src={Logo} alt="logo" />
       <StyledUl>
         <StyledListItem>

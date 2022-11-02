@@ -24,13 +24,7 @@ export default function Home() {
       <Titre></Titre>
       <Banderole></Banderole>
       <Title>Lines-san</Title>
-      <div>
-        <p>
-          ロレム・イプサム、略してリプサム lipsum
-          ともいう）とは、出版、ウェブデザイン、グラフィックデザインなどの諸分野において使用されている典型的なダミーテキスト。書籍やウェブページや広告などのデザインのプロトタイプを制作したり顧客にプレゼンテーションしたりする際に、
-          まだ正式な文章の出来上がっていないテキスト部分の書体（フォント）、タイポグラフィ、レイアウトなどといった視覚的なデザインを調整したりわかりやすく見せるために用いられる。
-        </p>
-      </div>
+      <div></div>
       <StyledGrid>
         <img style={{ width: 400, height: 400 }} src={lines} alt="lines" />
         <p>
