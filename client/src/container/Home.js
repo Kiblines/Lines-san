@@ -1,10 +1,11 @@
 import React from "react";
 import Title from "../components/TitleHeader";
-import Banderole from "../banderole.jpeg";
+import Banderole from "../components/Banderole";
 
 export default function Home() {
   return (
     <div>
+      <Banderole></Banderole>
       <Title>Accueil</Title>
       <div>
         <p>
