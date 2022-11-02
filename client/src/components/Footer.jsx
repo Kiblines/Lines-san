@@ -3,7 +3,7 @@ import styled from "styled-components";
 import facebook from "../fb.png";
 import youtube from "../youtube.png";
 import twitter from "../twitter.png";
-import instagram from "../instagram.png";
+import instagram from "../insta.png";
 import logo from "../banderole.jpeg";
 
 const StyledDiv = styled.div`
