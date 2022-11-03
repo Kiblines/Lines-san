@@ -5,6 +5,7 @@ import youtube from "../youtube.png";
 import twitter from "../twitter.png";
 import instagram from "../insta.png";
 import logo from "../banderole.jpeg";
+import gmail from "../gmail.png";
 
 const StyledDiv = styled.div`
   display: flex;
@@ -37,6 +38,9 @@ export default function Footer() {
         </StyledLink>
         <StyledLink href="https://www.instagram.com/nicoots/">
           <StyledIcon src={instagram}></StyledIcon>
+        </StyledLink>
+        <StyledLink href="mailto:linesanthony018@gmail.com">
+          <StyledIcon src={gmail}></StyledIcon>
         </StyledLink>
       </StyledDiv>
     </>
