@@ -19,18 +19,22 @@ const StyledUl = styled.ul`
   padding: 0;
 `;
 
-const StyledListItem = styled.li`
+const StyledLi = styled.li`
   float: left;
   font-size: 36px;
 `;
 
-const StyledLink = styled.a`
+const StyledLink = styled(NavLink)`
   all: "none";
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+
+  &:hover {
+    color: #ddd;
+  }
 `;
 
 export default function Navbar() {
@@ -38,31 +42,18 @@ export default function Navbar() {
     <StyledRow src={background}>
       <img style={{ width: 100, height: 100 }} src={Logo} alt="logo" />
       <StyledUl>
-        <StyledListItem>
-          <StyledLink>
-            <img src={Logo} style={{ width: 100, height: 100 }}></img>
-          </StyledLink>
-        </StyledListItem>
-        <StyledListItem>
-          <StyledLink>
-            <NavLink to="/">Accueil</NavLink>
-          </StyledLink>
-        </StyledListItem>
-        <StyledListItem>
-          <StyledLink>
-            <NavLink to="/training">Cours</NavLink>
-          </StyledLink>
-        </StyledListItem>
-        <StyledListItem>
-          <StyledLink>
-            <NavLink to="/books">Livres</NavLink>
-          </StyledLink>
-        </StyledListItem>
-        <StyledListItem>
-          <StyledLink>
-            <NavLink to="/contact">Contact</NavLink>
-          </StyledLink>
-        </StyledListItem>
+        <StyledLi>
+          <StyledLink to="/">Accueil</StyledLink>
+        </StyledLi>
+        <StyledLi>
+          <StyledLink to="/training">Cours</StyledLink>
+        </StyledLi>
+        <StyledLi>
+          <StyledLink to="/books">Livres</StyledLink>
+        </StyledLi>
+        <StyledLi>
+          <StyledLink to="/contact">Contact</StyledLink>
+        </StyledLi>
       </StyledUl>
     </StyledRow>
   );
