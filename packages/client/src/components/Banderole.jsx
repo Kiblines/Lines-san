@@ -1,5 +1,5 @@
 import React from "react";
-import styled, { StyledComponent } from "styled-components";
+import styled from "styled-components";
 import logo from "../banderole.jpeg";
 import ponchite from "../logo.jpg";
 
