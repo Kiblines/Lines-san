@@ -45,17 +45,17 @@ export default function Navbar() {
         </StyledListItem>
         <StyledListItem>
           <StyledLink>
-            <NavLink to="/home">Accueil</NavLink>
+            <NavLink to="/">Accueil</NavLink>
           </StyledLink>
         </StyledListItem>
         <StyledListItem>
           <StyledLink>
-            <NavLink to="/cours">Cours</NavLink>
+            <NavLink to="/training">Cours</NavLink>
           </StyledLink>
         </StyledListItem>
         <StyledListItem>
           <StyledLink>
-            <NavLink to="/livres">Livres</NavLink>
+            <NavLink to="/books">Livres</NavLink>
           </StyledLink>
         </StyledListItem>
         <StyledListItem>
