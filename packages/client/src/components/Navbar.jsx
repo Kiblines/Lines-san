@@ -25,6 +25,7 @@ const StyledListItem = styled.li`
 `;
 
 const StyledLink = styled.a`
+  all: "none";
   display: block;
   color: white;
   text-align: center;

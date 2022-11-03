@@ -23,7 +23,6 @@ export default function site() {
             element={<Error type="404">La page n'existe pas</Error>}
           />
         </Routes>
-        <Home></Home>
         <Footer></Footer>
       </styledRow>
     </>
