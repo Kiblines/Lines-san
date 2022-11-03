@@ -30,7 +30,6 @@ const Container = styled.h1`
 `;
 
 export default function Title(props) {
-  const children = props.children;
   let backgroundColor = "#ffae00";
   return (
     <Background>
