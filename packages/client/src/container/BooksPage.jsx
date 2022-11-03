@@ -7,6 +7,7 @@ import { mockBooks } from "../mock/livres";
 const BookContainer = styled.div`
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
 `;
 
 function BooksPage() {
@@ -30,8 +31,8 @@ function BooksPage() {
 
   return (
     <BookContainer>
-      {mockBooks &&
-        mockBooks.map((book) => <BookCard key={book.livre_id} book={book} />)}
+      {books &&
+        books.map((book) => <BookCard key={book.livre_id} book={book} />)}
     </BookContainer>
   );
 }
