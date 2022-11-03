@@ -4,43 +4,59 @@ import Logo from "../lines-san.png";
 import { NavLink } from "react-router-dom";
 import background from "../background-header.jpg";
 
-const StyledRow = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  justify-content: flex-start;
-  overflow: hidden;
-  background-image: url(${background});
+const StyledRow = styled.nav`
+  font-size: 18px;
+  background-image: linear-gradient(
+    260deg,
+    rgb(42, 244, 152, 255) 0%,
+    #3498db 100%
+  );
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 10px;
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }
 `;
 
 const StyledUl = styled.ul`
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  display: ${(props) => props.display};
+  flex-direction: column;
+  @media (min-width: 768px) {
+    display: flex !important;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
 `;
 
 const StyledLi = styled.li`
-  float: left;
-  font-size: 36px;
+  text-align: center;
+  margin: 15px auto;
 `;
 
 const StyledLink = styled(NavLink)`
   all: "none";
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
+  color: black;
+  list-style-type: none;
 
   &:hover {
     color: #ddd;
+  }
+  @media (min-width: 768px) {
+    margin: 0px 10px;
   }
 `;
 
 export default function Navbar() {
   return (
     <StyledRow src={background}>
-      <img style={{ width: 100, height: 100 }} src={Logo} alt="logo" />
+      <img style={{ height: "100%" }} src={Logo} alt="logo" />
       <StyledUl>
         <StyledLi>
           <StyledLink to="/">Accueil</StyledLink>
