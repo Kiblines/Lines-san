@@ -20,13 +20,13 @@ function BooksPage() {
     getOrders()
       .then((response) => {
         setBooks(response.data);
+        console.log(response.data);
       })
       .catch((error) => {
         console.error(error);
       });
 
     // A supprimer lorsque tu auras fait le lien avec ton API PHP via le bout de code du dessus
-    setBooks(mockBooks);
   }, []);
 
   return (

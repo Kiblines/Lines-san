@@ -58,8 +58,12 @@ class Apicontroller
 
             ];
         }
+        echo "<pre>";
+        print_r($tab);
+        echo "</pre>";
+        
 
-        return $tab;
+        // return $tab;
     }
 //         $data = [];
 //         foreach($lines as $line){
