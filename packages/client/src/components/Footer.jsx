@@ -8,10 +8,11 @@ import logo from "../banderole.jpeg";
 
 const StyledDiv = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
   background-image: url(${logo});
+  margin-top: auto;
 `;
 
 const StyledIcon = styled.img`

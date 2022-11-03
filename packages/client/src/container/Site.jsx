@@ -10,7 +10,10 @@ import TrainingPage from "./TrainingPage";
 import BooksPage from "./BooksPage";
 
 const StyledRow = styled.div`
-  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100vh;
+  width: 100vw;
 `;
 
 export default function site() {

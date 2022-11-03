@@ -6,7 +6,7 @@ import ponchite from "../logo.jpg";
 const StyledBanderole = styled.div`
   border: 1px solid #000;
   background-image: url(${logo});
-  width: 100%;
+  width: 100vw;
   height: 300px;
   display: flex;
   justify-content: center;
@@ -17,7 +17,6 @@ export default function Banderole() {
   return (
     <StyledBanderole>
       <StyleImg src={ponchite}></StyleImg>
-      Je suis un gros noob
     </StyledBanderole>
   );
 }
