@@ -20,9 +20,9 @@ function Titre() {
 export default function Home() {
   return (
     <div>
-      <Titre></Titre>
+      <Title>Bonjour</Title>
       <Banderole></Banderole>
-      <Title>Lines-san</Title>
+
       <div></div>
       <StyledGrid>
         <img style={{ width: 400, height: 400 }} src={lines} alt="lines" />

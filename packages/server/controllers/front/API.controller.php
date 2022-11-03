@@ -29,41 +29,40 @@ class Apicontroller
         
     }
     private function dataLivres($lignes){
-        $tab = [];
+        // $tab = [];
         
-        foreach($lignes as $ligne){
-            if(!array_key_exists($ligne['livre_id'],$tab)){
-                $tab[$ligne['livre_id']] = [
-                    "id" => $ligne['livre_id'],
-                    "isbn" => $ligne['livre_isbn'],
-                    "titre" => $ligne['livre_titre'],
-                    "image" => $ligne['livre_img'],
-                    "prix" => $ligne['livre_prix'],
-                    "page" => $ligne['livre_page'],
-                    "langue" => $ligne['livre_langue'],
-                    "genre" => $ligne['livre_genre'],
+        // foreach($lignes as $ligne){
+        //     if(!array_key_exists($ligne['livre_id'],$tab)){
+        //         $tab[$ligne['livre_id']] = [
+        //             "id" => $ligne['livre_id'],
+        //             "isbn" => $ligne['livre_isbn'],
+        //             "titre" => $ligne['livre_titre'],
+        //             "image" => $ligne['livre_img'],
+        //             "prix" => $ligne['livre_prix'],
+        //             "page" => $ligne['livre_page'],
+        //             "langue" => $ligne['livre_langue'],
+        //             "genre" => $ligne['livre_genre'],
 
-                    "editeur" => [
-                        "idEditeur" => $ligne['editeur_id'],
-                        "libelleEditeur" => $ligne['editeur_libelle'],
-                        "paysEditeur" => $ligne['editeur_pays']
-                    ]
-                ];
-            }
+        //             "editeur" => [
+        //                 "idEditeur" => $ligne['editeur_id'],
+        //                 "libelleEditeur" => $ligne['editeur_libelle'],
+        //                 "paysEditeur" => $ligne['editeur_pays']
+        //             ]
+        //         ];
+        //     }
            
-            $tab[$ligne['livre_id']]['auteur'][] = [
-                "idAuteur" => $ligne['auteur_id'],
-                "nomAuteur" => $ligne['auteur_nom'],
-                "nomPays" => $ligne['auteur_nationalite']
+        //     $tab[$ligne['livre_id']]['auteur'][] = [
+        //         "idAuteur" => $ligne['auteur_id'],
+        //         "nomAuteur" => $ligne['auteur_nom'],
+        //         "nomPays" => $ligne['auteur_nationalite']
 
-            ];
-        }
-        echo "<pre>";
-        print_r($tab);
-        echo "</pre>";
-        
-
-        // return $tab;
+        //     ];
+        // }
+        // echo "<pre>";
+        // print_r ($tab);
+        // echo "</pre>";
+        $array = (array) $lignes;
+       return $array;
     }
 //         $data = [];
 //         foreach($lines as $line){

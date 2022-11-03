@@ -77,6 +77,8 @@ const Card = ({ book }) => {
             <ParamContainer>{book.livre_isbn}</ParamContainer>
             <ParamTitle>Langue</ParamTitle>
             <ParamContainer>{book.livre_langue}</ParamContainer>
+            <ParamTitle>Pages</ParamTitle>
+            <ParamContainer>{book.livre_page}</ParamContainer>
           </div>
         </StyledContent>
       </Dialog.Portal>
