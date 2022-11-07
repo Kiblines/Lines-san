@@ -58,7 +58,7 @@ const Card = ({ book }) => {
         <Title>{book.livre_titre}</Title>
         <div>
           <ParamTitle>Prix</ParamTitle>
-          <ParamContainer>{book.livre_prix}</ParamContainer>
+          <ParamContainer>{book.livre_prix}€ </ParamContainer>
           <ParamTitle>ISBN</ParamTitle>
           <ParamContainer>{book.livre_isbn}</ParamContainer>
           <ParamTitle>Langue</ParamTitle>
@@ -72,7 +72,7 @@ const Card = ({ book }) => {
           <Title>{book.livre_titre}</Title>
           <div>
             <ParamTitle>Prix</ParamTitle>
-            <ParamContainer>{book.livre_prix}</ParamContainer>
+            <ParamContainer>{book.livre_prix}€ </ParamContainer>
             <ParamTitle>ISBN</ParamTitle>
             <ParamContainer>{book.livre_isbn}</ParamContainer>
             <ParamTitle>Editeur</ParamTitle>
