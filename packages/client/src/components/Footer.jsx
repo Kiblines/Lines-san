@@ -20,7 +20,7 @@ const StyledLink = styled.a`
 `;
 
 const StyledIcon = styled.img`
-  height: 80px;
+  height: 50px;
 `;
 
 export default function Footer() {

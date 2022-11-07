@@ -75,10 +75,16 @@ const Card = ({ book }) => {
             <ParamContainer>{book.livre_prix}</ParamContainer>
             <ParamTitle>ISBN</ParamTitle>
             <ParamContainer>{book.livre_isbn}</ParamContainer>
+            <ParamTitle>Editeur</ParamTitle>
+            <ParamContainer>{book.editeur_libelle}</ParamContainer>
+            <ParamTitle>Auteur</ParamTitle>
+            <ParamContainer>{book.auteur_nom}</ParamContainer>
             <ParamTitle>Langue</ParamTitle>
             <ParamContainer>{book.livre_langue}</ParamContainer>
             <ParamTitle>Pages</ParamTitle>
             <ParamContainer>{book.livre_page}</ParamContainer>
+            <ParamTitle>genre</ParamTitle>
+            <ParamContainer>{book.livre_genre}</ParamContainer>
           </div>
         </StyledContent>
       </Dialog.Portal>

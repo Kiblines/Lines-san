@@ -20,7 +20,6 @@ function Titre() {
 export default function Home() {
   return (
     <div>
-      <Title>Bonjour</Title>
       <Banderole></Banderole>
 
       <div></div>
