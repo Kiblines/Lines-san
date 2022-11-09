@@ -26,7 +26,8 @@ const TriggerContainer = styled(Dialog.Trigger)`
 const Title = styled.h2``;
 
 const ParamContainer = styled.div`
-  margin-left: 1rem;
+  margin-left: 8px;
+  margin-bottom: 8px;
 `;
 
 const ParamTitle = styled.div`
@@ -83,7 +84,7 @@ const Card = ({ book }) => {
             <ParamContainer>{book.livre_langue}</ParamContainer>
             <ParamTitle>Pages</ParamTitle>
             <ParamContainer>{book.livre_page}</ParamContainer>
-            <ParamTitle>genre</ParamTitle>
+            <ParamTitle>Genre</ParamTitle>
             <ParamContainer>{book.livre_genre}</ParamContainer>
           </div>
         </StyledContent>
