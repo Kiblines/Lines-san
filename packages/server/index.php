@@ -1,4 +1,5 @@
 <?php
+session_start();
 //L'index.php sera l'interface entre le client et le serveur 
 define("URL", str_replace("index.php", "", (isset($_SERVER['HTTPS']) ? "https" : "http") .
     "://$_SERVER[HTTP_HOST]$_SERVER[PHP_SELF]"));
@@ -42,14 +43,26 @@ try {
                                 case "login":
                                     $adminController->getPageLogin();
                                     break;
+                                case "connexion":
+                                    $adminController->connexion();
+                                    break;
+                                case "admin":
+                                    $adminController->getAccueilAdmin();
+                                    break;
+                                case "deconnexion";
+                                    $adminController->deconnexion();
+                                    break;    
                                 default:
                                     throw new Exception("La page n'existe pas");
                                     
+                                    
                             }
+                            break;
                            
                             
                         default:
                             throw new Exception("La page n'existe pas");
+                            
                     }
                 }
             } catch (Exception $e) {
