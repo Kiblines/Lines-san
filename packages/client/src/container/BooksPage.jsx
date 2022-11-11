@@ -8,6 +8,8 @@ const BookContainer = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  flex-grow: 1;
+  background-color: lightgoldenrodyellow;
 `;
 
 function BooksPage() {

@@ -15,7 +15,7 @@ const TriggerContainer = styled(Dialog.Trigger)`
   border-radius: 8px;
   box-shadow: 0 3px 12px 0 rgba(52, 40, 87, 0.1);
   border: none;
-  background: #ffffff;
+  background-color: #f5f5e2;
 
   &:hover {
     cursor: pointer;
