@@ -1,9 +1,16 @@
 import React from "react";
+import styled from "styled-components";
+
+const TrainingContent = styled.div`
+  background-color: lightgoldenrodyellow;
+  flex-grow: 1;
+  padding: 5vh 5vw 5vh 5vw;
+`;
 
 function TrainingPage() {
   return (
-    <div>
-      Dans cet article, nous allons parler du Katakana（片仮名/カタカナ）, la
+    <TrainingContent>
+      Dans cet article, nous allons parler du Katakana (片仮名/カタカナ), la
       deuxième famille d’“alphabets” de la langue japonaise. Au menu Le Katakana
       en japonais Le japonais est une langue qui fonctionne par “syllabes”. Tout
       comme le Hiragana que nous avons déjà introduit dans un article précédent,
@@ -27,7 +34,7 @@ function TrainingPage() {
       Pokémons). Quelques fois l’auteur fait même exprès de les écrire en
       Katakana pour les mettre en relief. Pour la plupart des onomatopées,
       surtout dans les mangas.
-    </div>
+    </TrainingContent>
   );
 }
 
