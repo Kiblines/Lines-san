@@ -3,12 +3,13 @@ import Title from "../components/TitleHeader";
 import Banderole from "../components/Banderole";
 import styled from "styled-components";
 import lines from "../lines-san.png";
+import learning from "../1.png";
 
 const Content = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  background-color: lightgoldenrodyellow;
+  background-color: #000033;
   padding: 5vh 5vw 5vh 5vw;
   flex-grow: 1;
 
@@ -37,7 +38,7 @@ export default function Home() {
   return (
     <Content>
       <IconContainer>
-        <JapIcon src={lines} alt="Le japonais facile" />
+        <JapIcon src={learning} alt="Le japonais facile" />
       </IconContainer>
       <p style={{ maxWidth: 700 }}>
         ロレム・イプサム、略してリプサム lipsum

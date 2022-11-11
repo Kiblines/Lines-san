@@ -9,8 +9,8 @@ const StyledRow = styled.nav`
   font-size: 18px;
   background-image: linear-gradient(
     260deg,
-    rgb(42, 244, 152, 255) 0%,
-    #c81414 100%
+    rgb(22, 124, 125, 155) 0%,
+    #cc9933 100%
   );
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding-bottom: 10px;

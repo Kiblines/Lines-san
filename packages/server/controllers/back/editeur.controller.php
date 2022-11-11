@@ -13,7 +13,7 @@ public function __construct(){
 public function visualisation () {
  if(Securite::verifAccessSession()){
     $editeur = $this->editeurManager->getEditeur();
-    print_r($editeur);
+    
     require_once "views/editeurVisualisation.view.php";
     } else {
     throw new Exception("Vous n'avez pas le droit d'être là ! ");
@@ -21,6 +21,14 @@ public function visualisation () {
 
 
 }
-
+public function suppression () {
+    if(Securite::verifAccessSession()){
+        $this->editeurManager->deleteEditeur((int)Securite::secureHTML($_POST['editeur_id']));
+        } else {
+        throw new Exception("Vous n'avez pas le droit d'être là ! ");
+        }
+    
+    
+    }
 
 }
