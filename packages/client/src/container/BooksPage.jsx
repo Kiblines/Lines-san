@@ -10,6 +10,7 @@ const BookContainer = styled.div`
   justify-content: center;
   flex-grow: 1;
   background-color: lightgoldenrodyellow;
+  padding: 5vh 5vw 5vh 5vw;
 `;
 
 function BooksPage() {
