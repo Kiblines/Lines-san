@@ -7,8 +7,11 @@ define("URL", str_replace("index.php", "", (isset($_SERVER['HTTPS']) ? "https" :
 // require sur api.controller.php
 require_once("controllers/front/API.controller.php");
 require_once("controllers/back/admin.controller.php");
+require_once('controllers/back/livres.controller.php');
+require_once('controllers/back/editeur.controller.php');
 $apiController = new Apicontroller();
 $adminController = new AdminController();
+$editeurController = new EditeurController();
 
 
 try {
@@ -49,23 +52,49 @@ try {
                                 case "admin":
                                     $adminController->getAccueilAdmin();
                                     break;
+                                    
+
                                 case "deconnexion";
                                     $adminController->deconnexion();
-                                    break;    
+                                    break; 
+                                case "editeur":   
+                                    switch ($url[2]) {
+                                        case "visualisation":
+                                            $editeurController->visualisation();
+                                            break;
+                                        case "ajout":
+                                            $editeurController->ajout();
+                                            break;
+                                        case "modification":
+                                            $editeurController->modification();
+                                            break;
+                                        case "suppression":
+                                            $editeurController->suppression();
+                                            break;
+                                        default:
+                                            throw new Exception("La page n'existe pas");
+                                            
+                                    }
+                                    break;   
                                 default:
                                     throw new Exception("La page n'existe pas");
                                     
                                     
                             }
-                            break;
-                           
                             
+                            
+                                    
+                                
+                           
+                        break;    
                         default:
                             throw new Exception("La page n'existe pas");
                             
+                            
                     }
                 }
-            } catch (Exception $e) {
+            } catch (Exception $e) {    
                 $msg = $e->getMessage();
                 echo $msg;
+                echo "<a href='".URL."back/login'>login</a>";
             }
