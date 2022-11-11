@@ -21,7 +21,7 @@ const DivContext = styled.div`
   }
 `;
 
-const Img = styled.img`
+const Logo = styled.img`
   width: 277px;
   height: 34px;
   margin: 15px;
@@ -45,7 +45,7 @@ const Header = ({ data: user }) => {
 
   return (
     <StyledHeader className="header">
-      <Img src={logo} className="Logosbranding" />
+      <Logo src={logo} className="Logosbranding" />
       <DivContext>
         {selectedEnv ? (
           <select

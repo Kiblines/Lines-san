@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 import background from "../background-header.jpg";
 
 const StyledRow = styled.nav`
+  display: flex;
   font-size: 18px;
   background-image: linear-gradient(
     260deg,
@@ -13,16 +14,19 @@ const StyledRow = styled.nav`
   );
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding-bottom: 10px;
+  flex-flow: column nowrap;
+  align-items: center;
+
   @media (min-width: 768px) {
-    display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
     padding-bottom: 0;
     height: 70px;
-    align-items: center;
   }
 `;
 
 const StyledUl = styled.ul`
+  all: unset;
   list-style-type: none;
   display: ${(props) => props.display};
   flex-direction: column;
@@ -53,10 +57,16 @@ const StyledLink = styled(NavLink)`
   }
 `;
 
+const StyledLogo = styled.img`
+  height: 100px;
+  width: auto;
+  max-height: 100%;
+`;
+
 export default function Navbar() {
   return (
     <StyledRow src={background}>
-      <img style={{ height: "100%" }} src={Logo} alt="logo" />
+      <StyledLogo src={Logo} alt="logo" />
       <StyledUl>
         <StyledLi>
           <StyledLink to="/">Accueil</StyledLink>
