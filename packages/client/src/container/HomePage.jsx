@@ -31,17 +31,24 @@ const IconContainer = styled.div`
   align-items: center;
 `;
 
+const StyledParagraph = styled.p`
+  max-width: 50vw;
+  @media (max-width: 1480px) {
+    max-width: 80vw;
+  }
+`;
+
 export default function Home() {
   return (
     <Content>
       <IconContainer>
         <JapIcon src={lines} alt="Le japonais facile" />
       </IconContainer>
-      <p style={{ maxWidth: 700 }}>
+      <StyledParagraph>
         ロレム・イプサム、略してリプサム lipsum
         ともいう）とは、出版、ウェブデザイン、グラフィックデザインなどの諸分野において使用されている典型的なダミーテキスト。書籍やウェブページや広告などのデザインのプロトタイプを制作したり顧客にプレゼンテーションしたりする際に、
         まだ正式な文章の出来上がっていないテキスト部分の書体（フォント）、タイポグラフィ、レイアウトなどといった視覚的なデザインを調整したりわかりやすく見せるために用いられる。
-      </p>
+      </StyledParagraph>
       <IconContainer>
         <JapIcon src={lines} alt="Le japonais facile" />
       </IconContainer>
