@@ -7,7 +7,7 @@ import instagram from "../insta.png";
 import logo from "../banderole.jpeg";
 import gmail from "../gmail.png";
 
-const StyledDiv = styled.div`
+const StyledFooter = styled.footer`
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
@@ -15,6 +15,11 @@ const StyledDiv = styled.div`
   background-image: url(${logo});
   margin-top: auto;
   height: 100px;
+  //media query at 768px
+  @media (max-width: 768px) {
+    align-items: center;
+    height: auto;
+  }
 `;
 const StyledLink = styled.a`
   display: flex;
@@ -22,12 +27,12 @@ const StyledLink = styled.a`
 `;
 
 const StyledIcon = styled.img`
-  height: 50px;
+  max-height: 50px;
 `;
 
 export default function Footer() {
   return (
-    <StyledDiv>
+    <StyledFooter>
       <StyledLink href="https://www.instagram.com/nicoots/">
         <StyledIcon src={facebook}></StyledIcon>
       </StyledLink>
@@ -43,6 +48,6 @@ export default function Footer() {
       <StyledLink href="mailto:linesanthony018@gmail.com">
         <StyledIcon src={gmail}></StyledIcon>
       </StyledLink>
-    </StyledDiv>
+    </StyledFooter>
   );
 }
