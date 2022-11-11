@@ -1,6 +1,4 @@
 import React, { useEffect } from "react";
-import Title from "../components/TitleHeader";
-import Banderole from "../components/Banderole";
 import styled from "styled-components";
 import lines from "../lines-san.png";
 
