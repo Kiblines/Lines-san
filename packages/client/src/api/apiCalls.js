@@ -5,3 +5,9 @@ export const getOrders = async () => {
     "http://localhost/SERVEURLINES/packages/server/front/livres"
   );
 };
+
+// Send a POST request
+axios({
+  method: "GET",
+  url: "/user/12345",
+});

@@ -89,28 +89,28 @@ export default function ContactForm() {
 
   return (
     <StyledForm onSubmit={onSubmit}>
-      <FormLabel htmlFor="name">Nom</FormLabel>
-      <FormInput
+      <FormLabel>Nom</FormLabel>
+      <FormInputx
         type="text"
         placeholder="Nom"
         value={name}
-        onChange={(e) => setName(e.target.value)}
+        onChange={(e) => setName(e.target.value)} // à chaque fois que la valeur de l'input va changer, on met à jour le state
       />
-      <FormLabel htmlFor="email">Email</FormLabel>
+      <FormLabel>Email</FormLabel>
       <FormInput
         type="email"
         placeholder="Email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
-      <FormLabel htmlFor="object">Objet</FormLabel>
+      <FormLabel>Objet</FormLabel>
       <FormInput
         type="text"
         placeholder="Objet"
         value={object}
         onChange={(e) => setObject(e.target.value)}
       />
-      <FormLabel htmlFor="message">Message</FormLabel>
+      <FormLabel>Message</FormLabel>
       <FormTextArea
         type="text"
         value={message}
