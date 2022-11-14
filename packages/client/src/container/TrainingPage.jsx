@@ -10,30 +10,19 @@ const TrainingContent = styled.div`
 function TrainingPage() {
   return (
     <TrainingContent>
-      Dans cet article, nous allons parler du Katakana (片仮名/カタカナ), la
-      deuxième famille d’“alphabets” de la langue japonaise. Au menu Le Katakana
-      en japonais Le japonais est une langue qui fonctionne par “syllabes”. Tout
-      comme le Hiragana que nous avons déjà introduit dans un article précédent,
-      le Katakana est aussi un alphabet qui permet de traduire des syllabes
-      phonétiques en lettres. Mais pourquoi s’embêter avec un second système
-      d’écriture alors qu’on a déjà les Hiragana? Eh bien en fait, les Katakanas
-      sont principalement utilisés pour écrire des mots importés de l’étranger,
-      comme de l’anglais, du français ou parfois même du chinois (un mot qui
-      existe déjà en Kanji mais dans une prononciation chinoise par exemple). Du
-      moins, c’est ce que vous raconteront la majorité les professeurs de
-      japonais. Mais il existe également trois autres grandes utilisations des
-      Katakanas et ce, crucial dans la lecture des Mangas: Pour remplacer des
-      mots normalement écrits en Kanji, dans le cas où l’écrivain aurait la
-      flemme de les écrire, ou alors pour les mettre en valeur dans une phrase,
-      comme par exemple les insultes (ex:「バカ（baka）= con」à la place
-      de「馬鹿（baka）」en Kanji, ou 「ヤロー（yaro）= gars」 à la place de
-      「野郎（yarou）」) Pour les noms des personnages, aussi bien dans le cas
-      où l’écrivain aurait eu la flemme de réfléchir à des Kanji, ou alors dans
-      le cas où aucun Kanji n’existerait pour ces noms (ex: la majorité des noms
-      des personnages de Dragon Ball, One Piece, etc. et tous les noms de
-      Pokémons). Quelques fois l’auteur fait même exprès de les écrire en
-      Katakana pour les mettre en relief. Pour la plupart des onomatopées,
-      surtout dans les mangas.
+      <p>
+        Le japonais compte quatre formes d’écriture : – Hiragana （ひらがな) –
+        Katakana　（カタカナ） – Kanji　（漢字） – Roumaji　(romaji) – Vous
+        voyez des carrés à la place des caractères japonais? Cliquez ici •
+        Hiragana / Katakana : contrairement aux langues romaines comme le
+        français, qui utilisent des consonnes et voyelles pour former un
+        alphabet, les caractères hiragana et katakana sont regroupés sous forme
+        d’un syllabaire (ka,ki,ku,ke,ko…). Ainsi le mot ‘anata’ (toi/tu) s’écrit
+        en hiragana あなた formé du ‘a’ あ du ‘na’ な et du ‘ta’ た . On compte
+        46 caractères dans chacun de ces deux syllabaires. L’écriture en
+        katakana est utilisée en japonais pour la transcription des mots
+        étrangers.
+      </p>
     </TrainingContent>
   );
 }

@@ -10,9 +10,9 @@ import gmail from "../gmail.png";
 const StyledFooter = styled.footer`
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-end;
+  justify-content: space-around;
   align-items: center;
-  background-image: url(${logo});
+  background-color: #040000;
   margin-top: auto;
   height: 100px;
   //media query at 768px
@@ -36,9 +36,7 @@ export default function Footer() {
       <StyledLink href="https://www.instagram.com/nicoots/">
         <StyledIcon src={facebook}></StyledIcon>
       </StyledLink>
-      <StyledLink href="https://www.instagram.com/nicoots/">
-        <StyledIcon src={youtube}></StyledIcon>
-      </StyledLink>
+
       <StyledLink href="https://www.instagram.com/nicoots/">
         <StyledIcon src={twitter}></StyledIcon>
       </StyledLink>
