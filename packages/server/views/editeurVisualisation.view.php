@@ -17,7 +17,7 @@
       <td><?=$editeur['editeur_libelle']?></td>
       <td><?=$editeur['editeur_pays']?></td>
       <td><button type="button" class="btn btn-primary">Modifier</button></td>
-      <td><button type="button" class="btn btn-primary">Supprimer</button></td>
+      
         <td>
             <form method ="post" action="<?= URL ?>back/editeur/suppression" onSubmit="return confirm ('voulez vous vraiment supprimer l'editeur ?');">
                 <input type="hidden" name="editeur_id" value="<?=$editeur['editeur_id']?>">

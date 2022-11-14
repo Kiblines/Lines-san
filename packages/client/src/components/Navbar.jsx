@@ -7,11 +7,7 @@ import background from "../background-header.jpg";
 const StyledRow = styled.nav`
   display: flex;
   font-size: 18px;
-  background-image: linear-gradient(
-    260deg,
-    rgb(22, 124, 125, 155) 0%,
-    #cc9933 100%
-  );
+  background-image: linear-gradient(260deg, rgb(51, 51, 204) 0%, #cc9933 100%);
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding-bottom: 10px;
   flex-flow: column nowrap;

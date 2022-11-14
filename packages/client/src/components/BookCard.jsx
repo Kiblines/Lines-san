@@ -7,6 +7,7 @@ const StyledRoot = styled(Dialog.Root)``;
 const TriggerContainer = styled(Dialog.Trigger)`
   all: unset;
   width: 250px;
+  height: 250px;
   display: flex;
   flex-flow: column nowrap;
 
@@ -51,7 +52,8 @@ const StyledContent = styled(Dialog.Content)`
   transform: translate(-50%, -50%);
 `;
 
-const Card = ({ book }) => {
+const Card = (props) => {
+  const { book } = props;
   return (
     <StyledRoot>
       {/* Dans le TriggerContainer c'est ce qu'on a dans la Card*/}

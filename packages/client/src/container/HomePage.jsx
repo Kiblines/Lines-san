@@ -20,6 +20,7 @@ const Content = styled.div`
 `;
 
 const JapIcon = styled.img`
+  //vw= % de la largeur de la fenêtre; vh= % de la hauteur de la fenêtre
   width: 50vw;
   height: 50vw;
   max-height: 250px;
