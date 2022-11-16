@@ -20,4 +20,13 @@ class EditeurManager extends Model {
     return $stmt;
  }
 
+ public function addEditeur ($libelle, $pays) {
+    $sql = "INSERT INTO editeur (editeur_libelle, editeur_pays) VALUES (:libelle, :pays)";
+    $stmt = $this->getDB()->prepare($sql);
+    $stmt->bindValue(":libelle", $libelle, PDO::PARAM_STR);
+    $stmt->bindValue(":pays", $pays, PDO::PARAM_STR);
+    $stmt->execute();
+    $stmt->closeCursor();
+    return $this->getDB()->lastInsertId();
+ }
 }

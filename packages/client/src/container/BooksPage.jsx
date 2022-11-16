@@ -38,6 +38,9 @@ function BooksPage() {
 
   //La fonction map, elle s'applique sur un tableau, et elle retourne en résultat un nouveau tableau
   // const tab1 = [1,2,3]
+  // tab1.map(x => x+1) => Ca va rien faire
+  // const tab2 = tab1.map(x => x+1)     ==> tab2 = [2,3,4]   /  tab1 = [1,2,3]
+  // tab1.foreach(x => )
   return (
     <BookContainer>
       {books //books !== undefined / null / 0 / false

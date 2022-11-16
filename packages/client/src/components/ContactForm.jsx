@@ -90,7 +90,7 @@ export default function ContactForm() {
   return (
     <StyledForm onSubmit={onSubmit}>
       <FormLabel>Nom</FormLabel>
-      <FormInputx
+      <FormInput
         type="text"
         placeholder="Nom"
         value={name}

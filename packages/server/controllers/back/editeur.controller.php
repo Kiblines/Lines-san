@@ -31,4 +31,31 @@ public function suppression () {
     
     }
 
+public function creation () {
+    if(Securite::verifAccessSession()){
+        
+        
+        require_once "views/editeurCreation.view.php";
+        } else {
+        throw new Exception("Police que faites vous là ? ");
+        }
+
+
+}
+public function creationValidation () {
+    if(Securite::verifAccessSession()){
+        $libelle = Securite::secureHTML($_POST['editeur_libelle']);
+        $pays = Securite::secureHTML($_POST['editeur_pays']);
+        $idEditeur= $this->editeurManager->addEditeur($libelle, $pays);
+       
+        header("Location: ".URL."back/editeur/visualisation");
+        
+        
+        } else {
+        throw new Exception("Police que faites vous là ? ");
+        }
+    
+    
+    }
+    
 }

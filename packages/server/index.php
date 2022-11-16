@@ -62,8 +62,8 @@ try {
                                         case "visualisation":
                                             $editeurController->visualisation();
                                             break;
-                                        case "ajout":
-                                            $editeurController->ajout();
+                                        case "creation":
+                                            $editeurController->creation();
                                             break;
                                         case "modification":
                                             $editeurController->modification();
@@ -71,6 +71,10 @@ try {
                                         case "suppression":
                                             $editeurController->suppression();
                                             break;
+                                        case "creationValidation":
+                                            $editeurController->creationValidation();
+                                            break;
+
                                         default:
                                             throw new Exception("La page n'existe pas");
                                             

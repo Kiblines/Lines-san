@@ -1,15 +1,25 @@
 import React from "react";
 import styled from "styled-components";
+import Working from "../4.png";
 
 const TrainingContent = styled.div`
   background-color: lightgoldenrodyellow;
   flex-grow: 1;
   padding: 5vh 5vw 5vh 5vw;
 `;
+const JapIcon = styled.img`
+  //vw= % de la largeur de la fenêtre; vh= % de la hauteur de la fenêtre
+  width: 50vw;
+  height: 50vw;
+  max-height: 250px;
+  max-width: 250px;
+  margin: 10px;
+`;
 
 function TrainingPage() {
   return (
     <TrainingContent>
+      <JapIcon src={Working} alt="Le japonais facile" />
       <p>
         Le japonais compte quatre formes d’écriture : – Hiragana （ひらがな) –
         Katakana　（カタカナ） – Kanji　（漢字） – Roumaji　(romaji) – Vous

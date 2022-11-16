@@ -1,9 +1,11 @@
 import React, { useEffect } from "react";
-import Title from "../components/TitleHeader";
+import Title from "../components/Title";
 import Banderole from "../components/Banderole";
 import styled from "styled-components";
 import lines from "../lines-san.png";
 import learning from "../1.png";
+import cheering from "../2.png";
+import hiragana from "../hiragana.png";
 
 const Content = styled.div`
   display: flex;
@@ -38,16 +40,18 @@ const IconContainer = styled.div`
 export default function Home() {
   return (
     <Content>
+      <Title>ひらがな</Title>
       <IconContainer>
         <JapIcon src={learning} alt="Le japonais facile" />
       </IconContainer>
+
       <p style={{ maxWidth: 700 }}>
         ロレム・イプサム、略してリプサム lipsum
         ともいう）とは、出版、ウェブデザイン、グラフィックデザインなどの諸分野において使用されている典型的なダミーテキスト。書籍やウェブページや広告などのデザインのプロトタイプを制作したり顧客にプレゼンテーションしたりする際に、
         まだ正式な文章の出来上がっていないテキスト部分の書体（フォント）、タイポグラフィ、レイアウトなどといった視覚的なデザインを調整したりわかりやすく見せるために用いられる。
       </p>
       <IconContainer>
-        <JapIcon src={lines} alt="Le japonais facile" />
+        <JapIcon src={cheering} alt="Le japonais facile" />
       </IconContainer>
     </Content>
   );
